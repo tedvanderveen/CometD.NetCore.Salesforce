@@ -1,0 +1,4 @@
+[submodule "CometD.NetCore"]
+	path = CometD.NetCore
+	url = https://github.com/tedvanderveen/CometD.NetCore.git
+	branch = dev
