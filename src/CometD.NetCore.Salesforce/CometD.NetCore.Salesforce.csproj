@@ -9,7 +9,6 @@
 	<ItemGroup>
     <PackageReference Include="Bet.Extensions" />
     <PackageReference Include="Bet.Extensions.Options" />
-    <PackageReference Include="CometD.NetCore2" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
 		<PackageReference Include="NetCoreForce.Client" />
@@ -22,6 +21,10 @@
 
   <ItemGroup>
     <Folder Include="DependencyInjection\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CometD.NetCore\src\CometD.NetCore\CometD.NetCore.csproj" />
   </ItemGroup>
 
 </Project>
