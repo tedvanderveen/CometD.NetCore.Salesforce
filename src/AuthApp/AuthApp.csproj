@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net6.0</TargetFrameworks>
     <Nullable>enable</Nullable>
     <ToolCommandName>salesforce</ToolCommandName>
     <PackageId>salesforce</PackageId>
@@ -32,4 +32,5 @@
 		<Content Include="appsettings*.json" CopyToOutputDirectory="PreserveNewest" />
 		<Content Include="hostsettings*.json" CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
+
 </Project>

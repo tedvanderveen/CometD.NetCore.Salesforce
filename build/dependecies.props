@@ -2,12 +2,8 @@
 
   <PropertyGroup>
     <RunCodeAnalysis>true</RunCodeAnalysis>
-    <NetCoreCommonVersion>3.1.*</NetCoreCommonVersion>
+    <NetCoreCommonVersion>6.0.*</NetCoreCommonVersion>
     <BetCommonVersion>3.1.*</BetCommonVersion>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net5.0' Or '$(TargetFramework)' == 'netstandard2.1'">
-    <NetCoreCommonVersion>5.0.*</NetCoreCommonVersion>
   </PropertyGroup>
 
   <ItemGroup Label="NetCore">
@@ -31,26 +27,26 @@
   </ItemGroup>
 
   <ItemGroup Label="Shared Libraries">
-    <PackageReference Update="McMaster.Extensions.CommandLineUtils" Version="3.1.0"/>
-    <PackageReference Update="NetCoreForce.Client" Version="3.0.0" />
-    <PackageReference Update="Polly" Version="7.2.1" />
+    <PackageReference Update="McMaster.Extensions.CommandLineUtils" Version="4.0.1"/>
+    <PackageReference Update="NetCoreForce.Client" Version="3.1.0" />
+    <PackageReference Update="Polly" Version="7.2.3" />
     <PackageReference Update="Colorful.Console" Version="1.2.15" />
-    <PackageReference Update="TextCopy" Version="4.3.0" />
+    <PackageReference Update="TextCopy" Version="6.1.0" />
   </ItemGroup>
 
   <ItemGroup Label="Testing">
-    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="17.2.0" />
     <PackageReference Update="xunit" Version="2.4.1" />
-    <PackageReference Update="xunit.runner.visualstudio" Version="2.4.3" />
+    <PackageReference Update="xunit.runner.visualstudio" Version="2.4.5" />
   </ItemGroup>
 
   <ItemGroup Label="Analyzers">
-    <PackageReference Include="Bet.CodeAnalyzers" Version="1.0.10" PrivateAssets="All" />
-    <PackageReference Include="Bet.EditorConfig" Version="1.0.10" PrivateAssets="All" />
+    <PackageReference Include="Bet.CodeAnalyzers" Version="1.0.12" PrivateAssets="All" />
+    <PackageReference Include="Bet.EditorConfig" Version="1.0.12" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup Label="SourceLink">
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
